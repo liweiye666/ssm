@@ -10,7 +10,7 @@ public interface StudentService {
     public List<Student> studentList(String id);             //返回学生的集合
     public void registerStudent(Student student);               //学生注册
     public void registerMStudent(MStudent mStudent);            //学委注册
-    public MStudent findMStudent(String id);
+    public MStudent findMStudent(String id);                  //根据id找到学委对象
     public String findCName(String id);                      //根据学委学号找到对应的班级名
     public List<Student> selectStudent(String sname);          //根据学生的姓名找到对应的学生信息
     public List<String> selectSName(String id);              //根据学委学号找到所有的学生姓名
