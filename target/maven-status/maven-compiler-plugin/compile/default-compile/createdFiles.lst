@@ -1,0 +1,16 @@
+com\example\service\lmpl\StudentServiceImpl.class
+com\example\service\WorkService.class
+com\example\controller\LoginController.class
+com\example\dao\UserServiceDao.class
+com\example\dao\WorkServiceDao.class
+com\example\service\lmpl\WorkServiceImpl.class
+com\example\test\TestSpring.class
+com\example\controller\WorkController.class
+com\example\service\StudentService.class
+com\example\domain\Student.class
+com\example\dao\StudentServiceDao.class
+com\example\controller\StudentController.class
+com\example\service\UserService.class
+com\example\service\lmpl\UserServiceImpl.class
+com\example\domain\MStudent.class
+com\example\domain\Work.class

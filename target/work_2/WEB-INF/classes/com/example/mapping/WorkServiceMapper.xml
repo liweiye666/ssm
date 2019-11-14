@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.WorkServiceDao">
+    <select id="findAll" parameterType="java.lang.String" resultType="com.example.domain.Work">
+		select * from homework where id=#{id}
+	</select>
+
+	<insert id="insertWork" parameterType="Work">
+		INSERT INTO homework(
+			wname,
+			wcontent,
+			startTime,
+			endTIme,
+			id
+		)VALUES(
+			#{wname},
+			#{wcontent},
+			#{startTime},
+			#{endTime},
+			#{id}
+		)
+	</insert>
+
+	<delete id="deleteWork" parameterType="int">
+		DELETE FROM homework WHERE wid = #{wid}
+	</delete>
+
+	<update id="updateWork" parameterType="Work">
+		UPDATE homework SET
+		wname=#{wname},
+		wcontent=#{wcontent},
+		startTime=#{startTime},
+		endTIme=#{endTime}
+		WHERE wid=#{wid}
+	</update>
+	
+	<select id="queryWork" parameterType="java.lang.String" resultType="java.lang.String">
+		SELECT wname FROM homework WHERE id=#{id}
+	</select>
+
+	<select id="selectWork" parameterType="java.lang.String" resultType="com.example.domain.Work">
+		SELECT * FROM homework WHERE wname=#{wname}
+	</select>
+</mapper>
